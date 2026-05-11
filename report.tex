@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{xcolor}
+
+\pagecolor{black}
+\color{white}
+
+\title{Probability \& Statistics Project Report}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+This report analyzes global macroeconomic indicators and their relationship with inflation rates post-COVID. The primary objective is to investigate the factors driving inflation in selected economies using descriptive statistics, visualization, and machine learning models.
+
+\section{Literature Review}
+Recent literature suggests that inflation post-COVID has been driven by a combination of supply chain disruptions, energy price volatility, and expansionary monetary policies. Studies indicate that indicators such as money supply (M2), oil prices, and supply chain indices have a significant predictive power over inflation trends.
+
+\section{Data Description}
+The dataset consists of global macroeconomic data. The dependent variable is the inflation rate. The independent variables include interest rate, oil price, GDP growth, unemployment rate, money supply M2, exchange rate to USD, food price index, and supply chain index. 
+
+\subsection{Summary Statistics}
+The descriptive statistics for the selected country indicate varying levels of central tendency and dispersion among the independent variables. 
+\begin{table}[H]
+\centering
+\caption{Summary Statistics}
+\vspace{0.2cm}
+[INSERT SUMMARY STATISTICS TABLE HERE]
+\end{table}
+
+\subsection{Visual Analysis}
+Box plots reveal the presence of outliers in certain economic indicators, reflecting periods of high volatility. Scatter plots display pairwise correlations among variables.
+\begin{figure}[H]
+\centering
+[INSERT BOX PLOTS HERE]
+\caption{Box Plots of Variables}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+[INSERT SCATTER PLOTS HERE]
+\caption{Pairwise Scatter Plots}
+\end{figure}
+
+\section{Model Estimation}
+Two models were employed to predict inflation rates: Multiple Linear Regression and Random Forest Regressor. The data was split into training and testing sets. Both models utilized the full set of independent variables.
+
+\section{Results and Conclusion}
+The Mean Squared Error (MSE) was computed to evaluate the performance of both models. The Random Forest model generally captures non-linear relationships more effectively than the Multiple Linear Regression model.
+\begin{figure}[H]
+\centering
+[INSERT PREDICTION LINE GRAPH HERE]
+\caption{Actual vs. Predicted Inflation Rate}
+\end{figure}
+
+The analysis indicates that inflation is significantly affected by the selected independent variables. Future work may involve hyperparameter tuning for the Random Forest model and exploring time-series specific forecasting methods.
+
+\end{document}
